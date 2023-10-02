@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size:30px;
+  }
+.container{
+    width: 100%;
+    /* margin: auto; */
+    text-align: center;
+    justify-content: center;
+  }
+   
+  .row{
+    width: 100%;
+    margin: auto;
+  }
+  .menu{
+    float: left;
+    border: 1px solid #000;
+    padding: 10px;
+    background-color: aquamarine;
+    width: 30%;
+    position: relative;
+    margin-left: 2.5%;
+    margin-bottom: 2.5%;
+    justify-content: center;
+
+  }
+  .menu h2{
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1% 10% 1% 10%;
+    background: orange;
+    font-size: 16px;
+    
+  }
+  .menu p{
+    margin-top: 25px;
+    padding: 5px;
+  }
+/* ------------------For Tablet View--------------------- */
+  @media only screen and (min-width: 768px) and (max-width: 991px){
+    .menu{
+        width: 46%;
+    }
+    #add{
+        width: 94.5%;
+    }
+  }
+  /* -----------------Mobile View-------------- */
+  @media only screen and (max-width: 767px){
+    .menu{
+        width: 95%;
+    }
+  }
